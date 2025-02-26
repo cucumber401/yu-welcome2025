@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/yu-p",
+            "outputPath": "dist/yu-welcome2025",
             "index": "src/index.html",
             "baseHref": "/yu-welcome2025/",
             "main": "src/main.ts",
