@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    // 顏色變數
+    --background: #f7f1f0;
+    --primary: #a15c38;
+    --secondary: #c3a6a0;
+    --text-primary: #262220;
+    --text-secondary: #aa9990;
+    // 深色版
+    --background-dark: #000000;
+    --text-primary-dark: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    color: var(--primary);
+    margin: 0;
+}
+
+// RWD
+
+@media only screen and (max-width:1199px) {
+
+}
+
+@media only screen and (max-width: 575px) {
+
+}
