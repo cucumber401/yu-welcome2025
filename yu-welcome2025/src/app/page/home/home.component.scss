@@ -8,29 +8,35 @@
 
 .profile-bg {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 6rem);
 
     .colored {
+        position: absolute;
+        z-index: -1;
+        left: 0;
         background: var(--beige-primary);
-        flex-basis: 40%;
+        width: 40%;
         max-width: 600px;
-        height: calc(100vh - 6rem);
-        
+        min-height: calc(100vh - 6rem);
+
     }
 }
 
 .profile-center {
-    position: absolute;
-    top: 30vh;
-    left: calc(15%);
     width: 70%;
     display: flex;
+    align-items: center;
     gap: 40px;
+    padding: 64px 0;
 
     .profile-card {
         background: var(--beige-secondary);
-        flex: 0 0 300px;
+        flex: 0 1 300px;
+        height: 500px;
+
         text-align: center;
 
         display: flex;
@@ -45,7 +51,7 @@
 
         .photo {
             width: 100%;
-            
+
             img {
                 width: 100%;
                 aspect-ratio: 1;
@@ -54,9 +60,7 @@
             }
         }
 
-        h2 {
-
-        }
+        h2 {}
 
         hr {
             width: 50px;
@@ -74,17 +78,20 @@
 
 
     .intro {
+        flex: 1;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 40px;
+
         h1 {
             font-size: 6rem;
         }
 
         .d-flex {
             gap: 16px;
-            
+
             button {
                 font-size: 0.9rem;
             }
@@ -96,59 +103,49 @@
 // RWD
 
 @media only screen and (max-width: 991px) {
-    .profile-center {
-        top: 30vh;
-        left: calc(15%);
-        width: 70%;
-        flex-direction: column;
-        gap: 40px;
+    .profile-bg {
     
-        .profile-card {
-            background: var(--beige-secondary);
-            flex: 0 0 300px;
-            text-align: center;
-    
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 24px;
-            padding: 48px;
-    
-            border-radius: 2px;
-            box-shadow: var(--main-box-shadow);
-    
-            .photo {
-                width: 100%;
-    
-                img {
-                    width: 100%;
-                    border-radius: 50%;
-                }
-            }
-    
-            h2 {
-    
-            }
-    
-            hr {
-                width: 50px;
-                height: 1.5px;
-                background: var(--primary);
-                border: none;
-            }
-    
-            h3 {
-                font-weight: 300;
-                letter-spacing: 0.25em;
-            }
+        .colored {
+           
+            top: 400px;
+            bottom: 0;
+            
+            width: 100%;
+            max-width: none;
+            min-height: calc(100% - 64px);
+
     
         }
-    
-    
-        .intro {}
+    }
+
+    .profile-center {
+        flex-direction: column;
+
+        .profile-card {
+            // width: 100%;
+            width: calc(100% - 48px - 48px);
+
+            .photo {
+                width: 300px;
+                img {
+                }
+            }
+
+            h2 {}
+
+            hr {
+            }
+
+            h3 {
+            }
+
+        }
+
+
+        .intro {
+            
+        }
     }
 }
-@media only screen and (max-width: 575px) {
-    
-}
+
+@media only screen and (max-width: 575px) {}
