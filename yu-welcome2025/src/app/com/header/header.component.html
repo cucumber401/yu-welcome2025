@@ -2,9 +2,16 @@
     <div class="logo">
         Yurie Lin
     </div>
-    <div class="navbar">
+    <div class="btn-hamburger" [ngClass]="{'active': isHamburgerActive}" (click)="toggleHamburger()">
+        <!-- ☰ -->
+        <div class="btn-hamburger-line"></div>
+        <div class="btn-hamburger-line"></div>
+        <div class="btn-hamburger-line"></div>
+    </div>
+    <div class="navbar" [ngClass]="{'collapsed': !isHamburgerActive}">
         <div class="nav-items">
-            <div class="nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">HOME</div>
+            <div class="nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                HOME</div>
             <div class="nav-item" routerLink="/experience" routerLinkActive="active">EXPERIENCE</div>
             <div class="nav-item" routerLink="/projects" routerLinkActive="active">PROJECTS</div>
             <div class="nav-item" routerLink="/contact" routerLinkActive="active">CONTACT</div>
