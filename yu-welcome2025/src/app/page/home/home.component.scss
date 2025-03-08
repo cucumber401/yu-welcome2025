@@ -1,4 +1,154 @@
 .container-fluid {
-    padding: 32px 8px;
+    // padding: 32px 8px;
+    // background-image: url('../../../assets/images/bg_forest.jpg');
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+
 }
 
+.profile-bg {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+
+    .colored {
+        background: var(--beige-primary);
+        flex-basis: 40%;
+        max-width: 600px;
+        height: calc(100vh - 6rem);
+        
+    }
+}
+
+.profile-center {
+    position: absolute;
+    top: 30vh;
+    left: calc(15%);
+    width: 70%;
+    display: flex;
+    gap: 40px;
+
+    .profile-card {
+        background: var(--beige-secondary);
+        flex: 0 0 300px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 48px;
+
+        border-radius: 2px;
+        box-shadow: var(--main-box-shadow);
+
+        .photo {
+            width: 100%;
+            
+            img {
+                width: 100%;
+                aspect-ratio: 1;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        h2 {
+
+        }
+
+        hr {
+            width: 50px;
+            height: 1.5px;
+            background: var(--primary);
+            border: none;
+        }
+
+        h3 {
+            font-weight: 300;
+            letter-spacing: 0.25em;
+        }
+
+    }
+
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        h1 {
+            font-size: 6rem;
+        }
+
+        .d-flex {
+            gap: 16px;
+            
+            button {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+
+// RWD
+
+@media only screen and (max-width: 991px) {
+    .profile-center {
+        top: 30vh;
+        left: calc(15%);
+        width: 70%;
+        flex-direction: column;
+        gap: 40px;
+    
+        .profile-card {
+            background: var(--beige-secondary);
+            flex: 0 0 300px;
+            text-align: center;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            padding: 48px;
+    
+            border-radius: 2px;
+            box-shadow: var(--main-box-shadow);
+    
+            .photo {
+                width: 100%;
+    
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+    
+            h2 {
+    
+            }
+    
+            hr {
+                width: 50px;
+                height: 1.5px;
+                background: var(--primary);
+                border: none;
+            }
+    
+            h3 {
+                font-weight: 300;
+                letter-spacing: 0.25em;
+            }
+    
+        }
+    
+    
+        .intro {}
+    }
+}
+@media only screen and (max-width: 575px) {
+    
+}

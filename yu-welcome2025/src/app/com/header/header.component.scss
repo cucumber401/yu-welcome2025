@@ -8,9 +8,17 @@
 }
 
 .logo {
-    // line-height: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
     align-content: center;
     font-size: 1.6rem;
+
+    .cube {
+        background: var(--primary);
+        width: 16px;
+        aspect-ratio: 1;
+    }
 }
 
 .btn-hamburger {

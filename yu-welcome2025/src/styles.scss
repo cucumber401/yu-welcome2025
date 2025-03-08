@@ -5,6 +5,11 @@
     --secondary: #c3a6a0;
     --text-primary: #262220;
     --text-secondary: #aa9990;
+    // --beige-primary: #e6dace;
+    // --beige-secondary: #f4ece6;
+    --beige-primary: #e7e1e1;
+    --beige-secondary: #f7f1f0;
+    --main-box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
     // 深色版
     --background-dark: #000000;
     --text-primary-dark: #ffffff;
@@ -18,9 +23,55 @@ body {
     font-style: normal;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 p {
     color: var(--primary);
-    margin: 0;
+}
+
+// btn
+button {
+    cursor: pointer;
+}
+
+.btn-primary {
+    width: 8rem;
+    line-height: 2rem;
+    border-radius: 100px;
+    border: var(--primary) 1.6px solid;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.4s ease, color 0.4s ease;
+
+    &:hover {
+        background: white;
+        color: var(--primary);
+    }
+}
+.btn-secondary {
+    width: 8rem;
+    line-height: 2rem;
+    border-radius: 100px;
+    border: var(--text-primary) 1.6px solid;
+    background: white;
+    color: var(--text-primary);
+    font-weight: 600;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+
+    &:hover {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
+    }
 }
 
 .d-none {
