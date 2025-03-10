@@ -1,0 +1,110 @@
+.container-fluid {
+    text-align: center;
+}
+
+
+.block-title {
+    border-bottom: 2px solid var(--beige-secondary);
+
+    h3 {
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        line-height: 100px;
+    }
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px;
+    overflow: hidden;
+
+    .timeline-item {
+        display: flex;
+        gap: 128px;
+        width: 100%;
+
+        .timeline-left {
+            flex: 0 1 30%;
+            text-align: right;
+
+            .timeline-title {
+                font-weight: 500;
+                letter-spacing: 0.2em;
+            }
+
+            .timeline-subtitle {}
+        }
+
+        .timeline-right {
+            flex: 1;
+            flex: 0 1 70%;
+            text-align: left;
+
+
+            .timeline-title {
+                position: relative;
+
+                // dot
+                &::before {
+                    content: '';
+                    position: absolute;
+
+                    background: var(--text-primary);
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    top: 8px;
+                    left: -64px;
+
+                    // X軸抵銷，Y軸移動
+                    opacity: 0;
+                    transform: translate(-100px, 100px);
+                    animation: fadeIn 0.7s ease-out forwards;
+                }
+            }
+
+            .timeline-subtitle {
+                position: relative;
+                z-index: -1;
+
+                // line
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background: var(--beige-secondary);
+                    border-radius: 50%;
+                    width: 2px;
+                    top: -24px;
+                    bottom: -53px;
+                    left: -62px;
+
+                    // X軸抵銷
+                    transform: translateX(-100px);
+                    animation: fadeInX 0.7s ease-out forwards;
+                }
+
+
+            }
+        }
+
+        // 通用
+        .timeline-title {
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+
+        }
+
+        .timeline-subtitle {}
+
+        // 單獨調整最後一個時間軸的line
+        &:last-child .timeline-right .timeline-subtitle::before {
+            background: linear-gradient(var(--beige-secondary), transparent);
+        }
+    }
+
+
+}

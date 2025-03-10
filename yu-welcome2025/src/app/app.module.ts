@@ -11,6 +11,7 @@ import { ExperienceComponent } from './page/experience/experience.component';
 import { SkillsComponent } from './page/skills/skills.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { ProjectsComponent } from './page/projects/projects.component';
+import { IntersectionObserverDirective } from './directive/intersection-observer.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProjectsComponent } from './page/projects/projects.component';
     ExperienceComponent,
     SkillsComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    IntersectionObserverDirective
   ],
   imports: [
     BrowserModule,

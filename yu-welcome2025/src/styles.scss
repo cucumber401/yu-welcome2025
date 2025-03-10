@@ -57,6 +57,7 @@ button {
         color: var(--primary);
     }
 }
+
 .btn-secondary {
     width: 8rem;
     line-height: 2rem;
@@ -81,31 +82,43 @@ button {
     transform: translateX(-100px);
     animation: fadeInX 0.7s ease-out forwards;
 }
+
 .fade-in-right {
     opacity: 0;
     transform: translateX(100px);
     animation: fadeInX 0.7s ease-out forwards;
 }
+
 .fade-in-top {
     opacity: 0;
     transform: translateY(100px);
     animation: fadeInY 0.7s ease-out forwards;
 }
+
 .fade-in-bottom {
     opacity: 0;
     transform: translateY(-100px);
     animation: fadeInY 0.7s ease-out forwards;
 }
+
 @keyframes fadeInX {
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
+
 @keyframes fadeInY {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
 
