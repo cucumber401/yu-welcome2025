@@ -1,0 +1,47 @@
+// 共用元件樣式（如 button, card）
+
+// btn
+button {
+    cursor: pointer;
+}
+
+@mixin btn-primary {
+    width: 8rem;
+    line-height: 2rem;
+    border-radius: 100px;
+    border: var(--primary) 1.6px solid;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.4s ease, color 0.4s ease;
+
+    &:hover {
+        background: white;
+        color: var(--primary);
+    }
+}
+
+@mixin btn-secondary {
+    width: 8rem;
+    line-height: 2rem;
+    border: var(--text-primary) 1.6px solid;
+    background: white;
+    color: var(--text-primary);
+    font-weight: 600;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+    
+    &:hover {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
+    }
+}
+
+.btn-primary-r100 {
+    @include btn-primary;
+    border-radius: 100px;
+}
+.btn-secondary-r100 {
+    @include btn-secondary;
+    border-radius: 100px;
+}

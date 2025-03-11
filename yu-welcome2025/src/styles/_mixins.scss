@@ -1,0 +1,11 @@
+// geometry
+@mixin circle {
+    background: var(--text-primary);
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+@mixin dot {
+    @include circle;
+    width: 6px;
+}

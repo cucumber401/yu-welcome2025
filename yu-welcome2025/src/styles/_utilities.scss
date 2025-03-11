@@ -1,0 +1,41 @@
+// 工具類 class
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+// RWD
+
+@media only screen and (max-width:1199px) {
+    .d-xl-block {
+        display: block;
+    }
+
+    .d-xl-flex {
+        display: flex;
+    }
+
+
+}
+
+@media only screen and (max-width: 575px) {
+    .d-sm-none {
+        display: none;
+    }
+
+    .d-sm-block {
+        display: block;
+    }
+
+    .d-sm-flex {
+        display: flex;
+    }
+}
