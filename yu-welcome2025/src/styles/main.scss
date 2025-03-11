@@ -1,0 +1,15 @@
+@use './animations';
+@use './components';
+@use './mixins';
+@use './utilities';
+@use './typography';
+@use './variables';
+
+
+body {
+    margin: 0;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
