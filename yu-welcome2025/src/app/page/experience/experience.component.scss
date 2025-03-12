@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 40px;
+    padding: 64px 80px 84px;
     overflow: hidden;
 
     .timeline-item {
@@ -52,7 +52,6 @@
             .timeline-title {
                 position: relative;
                 font-weight: typography.$font-weight-bold;
-
 
                 // dot
                 &::before {
@@ -108,6 +107,7 @@
         // 單獨調整最後一個時間軸的line
         &:last-child .timeline-right .timeline-subtitle::before {
             background: linear-gradient(var(--beige-secondary), transparent);
+            bottom: -20px;
         }
     }
 
