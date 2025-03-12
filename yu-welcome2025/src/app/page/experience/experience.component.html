@@ -5,78 +5,20 @@
 
         </div>
         <div class="timeline">
-            <div class="timeline-item">
+            <div *ngFor="let item of experiencesList" class="timeline-item">
                 <div class="timeline-left fade-in-left">
-                    <div class="timeline-title">　2023-2024</div>
-                    <div class="timeline-subtitle">前端工程師</div>
+                    <div class="timeline-title">{{item.time}}</div>
+                    <!-- <div class="timeline-title">　{{item.time}}</div> -->
+                    <div class="timeline-subtitle">{{item.role}}</div>
                 </div>
                 <div class="timeline-right">
-                    <div class="timeline-title fade-in-right">泰元國際開發1</div>
+                    <div class="timeline-title fade-in-right">{{item.title}}</div>
                     <div class="timeline-subtitle fade-in-right">
-                        負責使用 Angular 開發 AI 生成圖片與 3D 編輯器 SaaS 平台的前端介面，
-                        專注於實現UI/UX設計師交付的網站外觀與互動功能，
-                        以確保使用者能獲得流暢的操作體驗。
+                        {{item.description}}
                     </div>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-left fade-in-left">
-                    <div class="timeline-title">　2023-2024</div>
-                    <div class="timeline-subtitle">前端工程師</div>
-                </div>
-                <div class="timeline-right">
-                    <div class="timeline-title fade-in-right">泰元2</div>
-                    <div class="timeline-subtitle fade-in-right">
-                        專注於實現UI/UX設計師交付的網站外觀與互動功能，
-                        以確保使用者能獲得流暢的操作體驗。
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-left fade-in-left">
-                    <div class="timeline-title">　2023-2024</div>
-                    <div class="timeline-subtitle">前端工程師</div>
-                </div>
-                <div class="timeline-right">
-                    <div class="timeline-title fade-in-right">泰元國際開3</div>
-                    <div class="timeline-subtitle fade-in-right">
-                        負責使用 Angular 開發 AI 生成圖片與 3D 編輯器 SaaS 平台的前端介面，
-                        專注於實現UI/UX設計師交付的網站外觀與互動功能，
-                        以確保使用者能獲得流暢的操作體驗。
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-left fade-in-left">
-                    <div class="timeline-title">　2023-2024</div>
-                    <div class="timeline-subtitle">前端工程師</div>
-                </div>
-                <div class="timeline-right">
-                    <div class="timeline-title fade-in-right">泰元2</div>
-                    <div class="timeline-subtitle fade-in-right">
-                        專注於實現UI/UX設計師交付的網站外觀與互動功能，
-                        以確保使用者能獲得流暢的操作體驗。
-                        專注於實現UI/UX設計師交付的網站外觀與互動功能，
-                        以確保使用者能獲得流暢的操作體驗。
-                        專注於實現UI/UX設計師交付的網站外觀與互動功能，
-                        以確保使用者能獲得流暢的操作體驗。
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-left fade-in-left">
-                    <div class="timeline-title">　2023-2024</div>
-                    <div class="timeline-subtitle">前端工程師</div>
-                </div>
-                <div class="timeline-right">
-                    <div class="timeline-title fade-in-right">泰元國際開3</div>
-                    <div class="timeline-subtitle fade-in-right">
-                        負責使用 Angular 開發 AI 生成圖片與 3D 編輯器 SaaS 平台的前端介面，
-                        專注於實現UI/UX設計師交付的網站外觀與互動功能，
-                        以確保使用者能獲得流暢的操作體驗。
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </app-layout-1>
