@@ -12,6 +12,12 @@ import { SkillsComponent } from './page/skills/skills.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { ProjectsComponent } from './page/projects/projects.component';
 import { IntersectionObserverDirective } from './directive/intersection-observer.directive';
+import { SinglePageResumeComponent } from './page/single-page-resume/single-page-resume.component';
+import { CExperienceComponent } from './com/c-experience/c-experience.component';
+import { CHomeComponent } from './com/c-home/c-home.component';
+import { CProjectsComponent } from './com/c-projects/c-projects.component';
+import { CSkillsComponent } from './com/c-skills/c-skills.component';
+import { CContactComponent } from './com/c-contact/c-contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,13 @@ import { IntersectionObserverDirective } from './directive/intersection-observer
     SkillsComponent,
     ContactComponent,
     ProjectsComponent,
-    IntersectionObserverDirective
+    IntersectionObserverDirective,
+    SinglePageResumeComponent,
+    CExperienceComponent,
+    CHomeComponent,
+    CProjectsComponent,
+    CSkillsComponent,
+    CContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,122 @@
+@use '../../../styles/typography';
+
+
+.profile-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 6rem);
+
+    .colored {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        background: var(--beige-primary);
+        width: 40%;
+        max-width: 600px;
+        min-height: calc(100vh - 6rem);
+    }
+}
+
+.profile-center {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 64px 0;
+
+    .profile-card {
+        background: var(--beige-secondary);
+        flex: 0 1 300px;
+        height: 500px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        padding: 48px;
+
+        border-radius: 2px;
+        box-shadow: var(--main-box-shadow);
+
+        .photo {
+            width: 100%;
+
+            img {
+                width: 100%;
+                aspect-ratio: 1;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        hr {
+            width: 50px;
+            height: 2px;
+            background: var(--primary);
+            border: none;
+        }
+
+        h3 {
+            font-weight: typography.$font-weight-light;
+            letter-spacing: typography.$letter-spacing-xxl;
+        }
+
+    }
+
+
+    .intro {
+        flex: 1;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        .d-flex {
+            gap: 16px;
+        }
+    }
+}
+
+
+// RWD
+
+@media only screen and (max-width: 991px) {
+    .profile-bg {
+        background: var(--beige-primary);
+        position: relative;
+        // 色塊上下對調
+        .colored {
+            background: white;
+            z-index: 0;
+            top: 0;
+            bottom: 90vh;
+
+            width: 100%;
+            max-width: none;
+            min-height: 0;
+        }
+    }
+
+    .profile-center {
+        flex-direction: column;
+
+        .profile-card {
+            width: calc(100% - 48px - 48px);
+
+            .photo {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {}

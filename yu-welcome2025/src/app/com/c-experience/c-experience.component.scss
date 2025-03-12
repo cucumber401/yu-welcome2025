@@ -1,0 +1,148 @@
+@use '../../../styles/mixins.scss';
+@use '../../../styles/typography';
+
+
+.container-fluid {
+    text-align: center;
+}
+
+.block-title {
+    border-bottom: 2px solid var(--beige-secondary);
+
+    h3 {
+        letter-spacing: typography.$letter-spacing-xl;
+        line-height: 100px;
+    }
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 64px 80px 84px;
+    overflow: hidden;
+
+    .timeline-item {
+        display: flex;
+        gap: 128px;
+        width: 100%;
+
+        .timeline-left {
+            flex: 0 1 30%;
+            text-align: right;
+
+            .timeline-title {
+                font-weight: typography.$font-weight-medium;
+                letter-spacing: typography.$letter-spacing-xxl;
+                line-height: 120%;
+            }
+        }
+
+        .timeline-right {
+            flex: 0 1 70%;
+            text-align: left;
+
+            .timeline-title {
+                position: relative;
+                font-weight: typography.$font-weight-bold;
+
+                // dot
+                &::before {
+                    @include mixins.dot;
+                    content: '';
+                    position: absolute;
+
+                    background: var(--text-primary);
+                    top: 8px;
+                    left: -64px;
+
+                    // X軸抵銷，Y軸移動
+                    opacity: 0;
+                    transform: translate(-100px, 100px);
+                    animation: fadeIn 0.7s ease-out forwards;
+                }
+            }
+
+            .timeline-subtitle {
+                position: relative;
+                z-index: -1;
+
+                // line
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background: var(--beige-secondary);
+                    border-radius: 50%;
+                    width: 2px;
+                    top: -24px;
+                    bottom: -53px;
+                    left: -62px;
+
+                    // X軸抵銷
+                    transform: translateX(-100px);
+                    animation: fadeInX 0.7s ease-out forwards;
+                }
+
+
+            }
+        }
+
+        // 通用
+        .timeline-title {
+            letter-spacing: typography.$letter-spacing-lg;
+            margin-bottom: 16px;
+        }
+
+        // 單獨調整最後一個時間軸的line
+        &:last-child .timeline-right .timeline-subtitle::before {
+            background: linear-gradient(var(--beige-secondary), transparent);
+            bottom: -20px;
+        }
+    }
+
+
+}
+
+// RWD
+
+@media only screen and (max-width: 767px) {
+    .block-title {
+        h3 {
+            line-height: 80px;
+        }
+    }
+
+    .timeline {
+        padding: 3.6em;
+        
+        .timeline-item {
+            gap: 12px;
+            flex-direction: column;
+
+            .timeline-left {
+                flex: 0 0 100%;
+                text-align: left;
+
+                .timeline-title {
+                    margin-bottom: 8px;
+
+                    // dot (mobile)
+                    &::before {
+                        content: '';
+                        @include mixins.dot;
+                        position: absolute;
+                        left: -1.8em;
+                        top: 0.43em;
+                    }
+                }
+            }
+
+            // 通用
+            .timeline-title {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

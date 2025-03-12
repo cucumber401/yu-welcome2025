@@ -1,22 +1,3 @@
 <app-layout-1>
-    <div class="container-fluid">
-        <div class="block-title">
-            <h3>EXPERIENCE</h3>
-        </div>
-        <div class="timeline">
-            <div *ngFor="let item of experiencesList" class="timeline-item">
-                <div class="timeline-left fade-in-left">
-                    <div class="timeline-title">{{item.time}}</div>
-                    <div class="timeline-subtitle">{{item.role}}</div>
-                </div>
-                <div class="timeline-right">
-                    <div class="timeline-title fade-in-right">{{item.title}}</div>
-                    <div class="timeline-subtitle fade-in-right">
-                        {{item.description}}
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
+    <app-c-experience></app-c-experience>
 </app-layout-1>

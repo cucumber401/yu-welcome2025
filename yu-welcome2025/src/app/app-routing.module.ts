@@ -6,6 +6,7 @@ import { ContactComponent } from './page/contact/contact.component';
 import { ExperienceComponent } from './page/experience/experience.component';
 import { ProjectsComponent } from './page/projects/projects.component';
 import { SkillsComponent } from './page/skills/skills.component';
+import { SinglePageResumeComponent } from './page/single-page-resume/single-page-resume.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'skills', component: SkillsComponent },
+  { path: 'resume', component: SinglePageResumeComponent },
 ];
 
 @NgModule({
