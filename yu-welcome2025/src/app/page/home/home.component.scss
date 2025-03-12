@@ -1,3 +1,5 @@
+@use '../../../styles/typography';
+
 .container-fluid {
     // padding: 32px 8px;
     // background-image: url('../../../assets/images/bg_forest.jpg');
@@ -64,14 +66,14 @@
 
         hr {
             width: 50px;
-            height: 1.5px;
+            height: 2px;
             background: var(--primary);
             border: none;
         }
 
         h3 {
-            font-weight: 300;
-            letter-spacing: 0.25em;
+            font-weight: typography.$font-weight-light;
+            letter-spacing: typography.$letter-spacing-xxl;
         }
 
     }
@@ -91,10 +93,6 @@
 
         .d-flex {
             gap: 16px;
-
-            button {
-                font-size: 0.9rem;
-            }
         }
     }
 }

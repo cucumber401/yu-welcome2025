@@ -1,5 +1,7 @@
 // @use '../../../styles/styles.scss' as *;
 @use '../../../styles/mixins.scss';
+@use '../../../styles/typography';
+
 
 .container-fluid {
     text-align: center;
@@ -10,8 +12,7 @@
     border-bottom: 2px solid var(--beige-secondary);
 
     h3 {
-        font-weight: 500;
-        letter-spacing: 0.12em;
+        letter-spacing: typography.$letter-spacing-xl;
         line-height: 100px;
     }
 }
@@ -35,8 +36,8 @@
             text-align: right;
 
             .timeline-title {
-                font-weight: 500;
-                letter-spacing: 0.2em;
+                font-weight: typography.$font-weight-medium;
+                letter-spacing: typography.$letter-spacing-xxl;
                 line-height: 120%;
             }
 
@@ -50,6 +51,8 @@
 
             .timeline-title {
                 position: relative;
+                font-weight: typography.$font-weight-bold;
+
 
                 // dot
                 &::before {
@@ -94,7 +97,8 @@
 
         // 通用
         .timeline-title {
-            letter-spacing: 0.1em;
+            letter-spacing: typography.$letter-spacing-lg;
+
             margin-bottom: 16px;
 
         }
@@ -132,7 +136,7 @@
 
         .timeline-item {
             // display: flex;
-            gap: 24px;
+            gap: 12px;
             // width: 100%;
             flex-direction: column;
             // overflow: visible;
@@ -142,8 +146,7 @@
                 text-align: left;
 
                 .timeline-title {
-                    // font-weight: 500;
-                    // letter-spacing: 0.2em;
+                    margin-bottom: 8px;
 
                     // dot (mobile)
                     &::before {
@@ -213,8 +216,7 @@
 
             // 通用
             .timeline-title {
-                // letter-spacing: 0.1em;
-                margin-bottom: 8px;
+                margin-bottom: 12px;
 
             }
 

@@ -1,3 +1,5 @@
+@use '../../../styles/typography';
+
 .header {
     background: white;
     display: flex;
@@ -12,7 +14,8 @@
     gap: 8px;
     align-items: center;
     align-content: center;
-    font-size: 1.6rem;
+    @include typography.h2;
+
 
     .cube {
         background: var(--primary);
@@ -50,7 +53,7 @@
 
             &.active {
                 color: var(--primary);
-                font-weight: 600;
+                font-weight: typography.$font-weight-bold;
             }
         }
     }

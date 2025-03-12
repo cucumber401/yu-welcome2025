@@ -1,8 +1,12 @@
 // 共用元件樣式（如 button, card）
+@use './typography';
+
 
 // btn
 button {
     cursor: pointer;
+    font-weight: typography.$font-weight-bold;
+    font-size: 0.9rem;
 }
 
 @mixin btn-primary {
@@ -12,7 +16,6 @@ button {
     border: var(--primary) 1.6px solid;
     background: var(--primary);
     color: white;
-    font-weight: 600;
     transition: background-color 0.4s ease, color 0.4s ease;
 
     &:hover {
@@ -27,7 +30,6 @@ button {
     border: var(--text-primary) 1.6px solid;
     background: white;
     color: var(--text-primary);
-    font-weight: 600;
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
     
     &:hover {
