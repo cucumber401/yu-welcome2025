@@ -102,17 +102,18 @@
 
 @media only screen and (max-width: 991px) {
     .profile-bg {
-    
+        background: var(--beige-primary);
+        position: relative;
+        // 色塊上下對調
         .colored {
-           
-            top: 400px;
-            bottom: 0;
-            
+            background: white;
+            z-index: 0;
+            top: 0;
+            bottom: 90vh;
+
             width: 100%;
             max-width: none;
-            min-height: calc(100% - 64px);
-
-    
+            min-height: 0;
         }
     }
 
@@ -125,24 +126,20 @@
 
             .photo {
                 width: 300px;
-                img {
-                }
+
+                img {}
             }
 
             h2 {}
 
-            hr {
-            }
+            hr {}
 
-            h3 {
-            }
+            h3 {}
 
         }
 
 
-        .intro {
-            
-        }
+        .intro {}
     }
 }
 
