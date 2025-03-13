@@ -1,1 +1,21 @@
-<p>c-projects works!</p>
+<div class="container-fluid">
+    <div class="block-title">
+        <h3>PROJECTS</h3>
+    </div>
+    <div class="projects">
+        <div *ngFor="let item of demoList" class="project-item">
+            <div class="project-media">
+                <video autoplay muted loop playsinline [style.aspect-ratio]="item.sizeRatio">
+                    <source src={{item.src}} type="video/mp4" />
+                    您的瀏覽器不支援 HTML5 video。
+                </video>
+            </div>
+            <div class="project-description">
+                <div class="title">{{item.title}}</div>
+                <div class="detail">{{item.description}}</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
