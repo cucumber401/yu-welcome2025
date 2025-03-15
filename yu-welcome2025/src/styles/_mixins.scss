@@ -9,3 +9,8 @@
     @include circle;
     width: 6px;
 }
+
+@mixin icon {
+    color: white;
+    font-size: 20px;
+}

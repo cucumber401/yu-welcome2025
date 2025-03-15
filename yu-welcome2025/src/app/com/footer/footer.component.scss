@@ -1,3 +1,5 @@
+@use '../../../styles/mixins';
+
 .footer {
     background: var(--primary);
     color: white;
@@ -5,4 +7,19 @@
     text-align: center;
     line-height: 1.6rem;
     padding: 0.8rem;
+    position: relative;
+}
+
+.social-account {
+    position: absolute;
+    top: 0;
+    right: 1.6rem;
+    transform: translateY(50%);
+    display: flex;
+    gap: 8px;
+
+    a {
+        @include mixins.icon;
+        cursor: pointer;
+    }
 }
