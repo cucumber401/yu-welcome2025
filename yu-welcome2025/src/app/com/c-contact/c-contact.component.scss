@@ -1,0 +1,95 @@
+@use '../../../styles/typography';
+@use '../../../styles/components';
+@use '../../../styles/mixins';
+
+
+.container-fluid {
+    background: var(--beige-primary);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block-title {
+    border-bottom: 2px solid var(--beige-secondary);
+    width: 100%;
+
+    h3 {
+        letter-spacing: typography.$letter-spacing-xl;
+        line-height: 100px;
+    }
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    padding: 2.4rem;
+
+    label {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25em;
+
+        &>* {
+            width: 100%;
+            padding: 0.5em 0.25em;
+            font-size: typography.$font-size-sm;
+            border: 1px solid var(--text-secondary);
+        }
+
+        #message {
+            height: 4em;
+            resize: none;
+        }
+    }
+
+    button {
+        @include components.btn-form;
+        width: 100%;
+    }
+}
+
+.contact-info {
+    flex: 1;
+    border-left: 2px solid var(--beige-secondary);
+    padding: 2.4rem;
+    text-align: left;
+
+    &>div {
+        margin-bottom: 1.6em;
+
+        h1 {
+            font-weight: typography.$font-weight-medium;
+        }
+
+        h3 {
+            font-weight: typography.$font-weight-light;
+        }
+
+        h4 {
+            margin-bottom: 0.2em;
+        }
+
+        h5 {
+            font-size: typography.$font-size-md;
+            font-weight: typography.$font-weight-light;
+
+        }
+    }
+
+    hr {
+        margin: 5em auto 1em;
+        background: var(--beige-secondary);
+    }
+
+    .social-account {
+        display: flex;
+        gap: 1.125em;
+
+        a {
+            @include mixins.icon-md;
+        }
+    }
+}
