@@ -10,7 +10,10 @@
     width: 6px;
 }
 
-@mixin icon {
+@mixin icon-sm {
     color: white;
     font-size: 20px;
+}
+@mixin icon-md {
+    font-size: 22px;
 }

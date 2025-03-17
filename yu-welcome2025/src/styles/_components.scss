@@ -12,7 +12,6 @@ button {
 @mixin btn-primary {
     width: 8rem;
     line-height: 2rem;
-    border-radius: 100px;
     border: var(--primary) 1.6px solid;
     background: var(--primary);
     color: white;
@@ -36,6 +35,19 @@ button {
         background: var(--primary);
         color: white;
         border-color: var(--primary);
+    }
+}
+@mixin btn-form {
+    width: 8rem;
+    line-height: 2rem;
+    border: var(--primary) 1.6px solid;
+    background: var(--primary);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.4s ease, color 0.4s ease;
+
+    &:hover {
+        opacity: 0.75;
     }
 }
 

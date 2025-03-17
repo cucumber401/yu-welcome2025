@@ -19,7 +19,7 @@
     gap: 8px;
 
     a {
-        @include mixins.icon;
+        @include mixins.icon-sm;
         cursor: pointer;
     }
 }
