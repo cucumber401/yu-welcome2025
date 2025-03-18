@@ -22,39 +22,48 @@
 
 .contact-form {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2em;
-    padding: 2.4rem;
+    padding: 3rem;
 
-    label {
+    form {
+        margin-left: auto;
         display: flex;
-        flex-wrap: wrap;
-        gap: 0.25em;
+        flex-direction: column;
+        gap: 1.5em;
 
-        &>* {
-            width: 100%;
-            padding: 0.5em 0.25em;
-            font-size: typography.$font-size-sm;
-            border: 1px solid var(--text-secondary);
-        }
-
-        #message {
-            height: 4em;
-            resize: none;
-        }
-    }
-
-    button {
-        @include components.btn-form;
         width: 100%;
+        max-width: 400px;
+
+        label {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25em;
+
+            &>* {
+                width: 100%;
+                padding: 0.5em 0.25em;
+                font-size: typography.$font-size-sm;
+                border: 1px solid var(--text-secondary);
+            }
+
+            #message {
+                height: 4em;
+                resize: none;
+            }
+        }
+
+        button {
+            @include components.btn-form;
+            width: 100%;
+        }
     }
+
+
 }
 
 .contact-info {
     flex: 1;
     border-left: 2px solid var(--beige-secondary);
-    padding: 2.4rem;
+    padding: 3rem;
     text-align: left;
 
     &>div {
@@ -80,8 +89,9 @@
     }
 
     hr {
-        margin: 5em auto 1em;
+        margin: 5em auto 1em 0;
         background: var(--beige-secondary);
+        max-width: 400px;
     }
 
     .social-account {
