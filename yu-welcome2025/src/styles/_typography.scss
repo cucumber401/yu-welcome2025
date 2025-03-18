@@ -2,9 +2,13 @@
 
 
 // 字型
-$font-sans: 'Noto Sans TC', sans-serif;
-$font-serif: 'Georgia', serif;
-$font-mono: 'Courier New', monospace;
+$font-family-english: "Kantumruy Pro", sans-serif;
+$font-family-chinese: "Chocolate Classical Sans", sans-serif;
+// $font-family-primary: "Kantumruy Pro", sans-serif;
+// $font-family-secondary: "Chocolate Classical Sans", sans-serif;
+// $font-sans: 'Noto Sans TC', sans-serif;
+// $font-serif: 'Georgia', serif;
+// $font-mono: 'Courier New', monospace;
 
 // 字重 font-weight
 $font-weight-light: 300;
@@ -27,26 +31,32 @@ $letter-spacing-lg: 0.1em;
 $letter-spacing-xl: 0.125em;
 $letter-spacing-xxl: 0.25em;
 
+
 @mixin p {
     font-size: $font-size-xs;
     font-weight: $font-weight-regular;
 }
+
 @mixin h5 {
     font-size: $font-size-sm;
     font-weight: $font-weight-regular;
 }
+
 @mixin h4 {
     font-size: $font-size-md;
     font-weight: $font-weight-medium;
 }
+
 @mixin h3 {
     font-size: $font-size-lg;
     font-weight: $font-weight-medium;
 }
+
 @mixin h2 {
     font-size: $font-size-xl;
     font-weight: $font-weight-bold;
 }
+
 @mixin h1 {
     font-size: $font-size-xxl;
     font-weight: $font-weight-bold;
@@ -67,24 +77,31 @@ p {
     color: var(--primary);
 }
 
-h6,p {
+h6,
+p {
     @include p;
 }
+
 h5 {
     @include h5;
 }
+
 h4 {
     @include h4;
 }
+
 h4 {
     @include h4;
 }
+
 h3 {
     @include h3;
 }
+
 h2 {
     @include h2;
 }
+
 h1 {
     @include h1;
 }

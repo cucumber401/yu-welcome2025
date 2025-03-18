@@ -12,8 +12,18 @@ html {
 
 body {
     margin: 0;
-    font-family: "Kantumruy Pro", sans-serif;
-    font-optical-sizing: auto;
+    font-family: typography.$font-family-chinese;
+    font-family: typography.$font-family-english, typography.$font-family-chinese;
+
+    font-optical-sizing: typography.$font-weight-regular;
     font-weight: 400;
     font-style: normal;
+}
+
+:lang(en) {
+    font-family: typography.$font-family-english;
+}
+
+:lang(zh) {
+    font-family: typography.$font-family-chinese;
 }
