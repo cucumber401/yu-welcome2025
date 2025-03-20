@@ -11,13 +11,13 @@ import { ExperienceComponent } from './page/experience/experience.component';
 import { SkillsComponent } from './page/skills/skills.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { ProjectsComponent } from './page/projects/projects.component';
-import { IntersectionObserverDirective } from './directive/intersection-observer.directive';
 import { SinglePageResumeComponent } from './page/single-page-resume/single-page-resume.component';
 import { CExperienceComponent } from './com/c-experience/c-experience.component';
 import { CHomeComponent } from './com/c-home/c-home.component';
 import { CProjectsComponent } from './com/c-projects/c-projects.component';
 import { CSkillsComponent } from './com/c-skills/c-skills.component';
 import { CContactComponent } from './com/c-contact/c-contact.component';
+import { BarChartAnimateDirective } from './directives/bar-chart-animate.directive';
 
 @NgModule({
   declarations: [
@@ -30,13 +30,13 @@ import { CContactComponent } from './com/c-contact/c-contact.component';
     SkillsComponent,
     ContactComponent,
     ProjectsComponent,
-    IntersectionObserverDirective,
     SinglePageResumeComponent,
     CExperienceComponent,
     CHomeComponent,
     CProjectsComponent,
     CSkillsComponent,
-    CContactComponent
+    CContactComponent,
+    BarChartAnimateDirective
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,53 @@
+@use '../../../styles/typography';
+
+
+.container-fluid {
+    text-align: center;
+}
+
+.block-title {
+    border-bottom: 2px solid var(--beige-secondary);
+
+    h3 {
+        letter-spacing: typography.$letter-spacing-xl;
+        line-height: 100px;
+    }
+}
+
+.bar-chart-graph {
+    max-width: 50rem;
+    padding: 40px 24px;
+    margin: auto;
+
+    .bar-chart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 0.75em;
+
+        .bar-chart-title {
+            flex: 30%;
+            text-align: left;
+            // text-align: right;
+        }
+
+        .bar-chart-container {
+            flex: 65%;
+            background: var(--beige-secondary);
+            height: 0.25em;
+            width: 50%;
+
+            .bar-chart {
+                background: var(--primary);
+                height: 100%;
+
+                width: 0%;
+                transition: width 0.7s ease;
+                
+            }
+        }
+    }
+
+
+}

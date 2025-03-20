@@ -1,1 +1,16 @@
-<p>c-skills works!</p>
+<div class="container-fluid">
+    <div class="block-title">
+        <h3>SKILLS</h3>
+    </div>
+    <div class="bar-chart-graph">
+        <div *ngFor="let item of skills" class="bar-chart-item">
+            <h4 class="bar-chart-title">{{item.skillTitle}}</h4>
+            <div class="bar-chart-container">
+                <div class="bar-chart" [appBarChartAnimate]="item.skillLevel"></div>
+                <!-- <div class="bar-chart" [ngStyle]="{'width': item.skillLevel}" [appBarChartAnimate]="item.skillLevel"></div> -->
+            </div>
+        </div>
+
+    </div>
+
+</div>
