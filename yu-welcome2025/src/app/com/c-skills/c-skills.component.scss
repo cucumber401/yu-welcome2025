@@ -24,7 +24,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 1em;
-        margin-bottom: 0.75em;
+        margin-bottom: 1.5em;
 
         .bar-chart-title {
             flex: 30%;
@@ -43,11 +43,24 @@
                 height: 100%;
 
                 width: 0%;
-                transition: width 0.7s ease;
-                
+                transition: width 0.7s ease-out;
             }
         }
     }
 
 
+}
+
+@media only screen and (max-width: 767px) {
+    .bar-chart-graph {
+        .bar-chart-item {
+            flex-wrap: wrap;
+            gap: 0.5em;
+            margin-bottom: 1.5em;
+
+            .bar-chart-title {
+                flex: 100%;
+            }
+        }
+    }
 }
