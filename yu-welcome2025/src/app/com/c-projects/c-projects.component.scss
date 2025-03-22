@@ -18,7 +18,7 @@
 .projects {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 48px;
     padding: 40px 24px;
     margin: auto;
     max-width: 1200px;
@@ -33,7 +33,7 @@
         border-radius: 15px;
         box-shadow: var(--main-box-shadow);
         overflow: hidden;
-        
+
         video {
             width: 100%;
             height: calc(100% + 2px); // 裁掉底下黑線
@@ -43,18 +43,21 @@
     }
 
     .project-description {
-        flex: 1;
+        flex: 0.6;
         border-radius: 15px;
         box-shadow: var(--main-box-shadow);
         background: var(--beige-secondary);
+        padding: 1.2rem 2rem;
+        height: fit-content;
 
         .title {
             @include typography.h2;
+            text-align: left;
             font-weight: typography.$font-weight-medium;
             color: var(--text-primary);
             border-radius: 4px;
             line-height: 200%;
-            margin-bottom: 16px;
+            margin-bottom: 0.8em;
         }
 
         .detail {
@@ -62,9 +65,11 @@
 
             ul {
                 font-size: typography.$font-size-lg;
+                padding-left: 1.5rem;
+                margin: 0;
+
                 li {
                     margin-bottom: 1em;
-
                 }
             }
         }

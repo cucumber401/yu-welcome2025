@@ -4,27 +4,6 @@
     </div>
     <div class="projects">
 
-        <!--  -->
-        <!-- <div class="project-item">
-            <div class="project-media">
-                <video autoplay muted loop playsinline [style.aspect-ratio]="1920 / 1336">
-                    <source src="../../../assets/videos/demo_BA圖.mp4" type="video/mp4" />
-                    測試
-                </video>
-            </div>
-            <div class="project-description">
-                <div class="title">/////測試//////</div>
-                <div class="detail">
-                    <ul>
-                        <li>畫布塗抹功能</li>
-                        <li>調整筆刷或橡皮擦粗細</li>
-                        <li>塗抹後重新生成</li>
-                    </ul>
-                </div>
-            </div>
-        </div> -->
-        <!--  -->
-
         <div *ngFor="let item of demoList" class="project-item">
             <div class="project-media">
                 <video autoplay muted loop playsinline [style.aspect-ratio]="item.sizeRatio">
