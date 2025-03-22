@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-c-experience',
   templateUrl: './c-experience.component.html',
-  styleUrls: ['./c-experience.component.scss']
+  styleUrls: ['./c-experience.component.scss'],
+  encapsulation: ViewEncapsulation.None // 把封裝關掉以正確渲染 innerHTML
 })
 export class CExperienceComponent {
   experiencesList: {
@@ -13,40 +14,28 @@ export class CExperienceComponent {
     description: string;
   }[] = [
       {
-        time: '2023-2024',
+        time: '2023/12 - 2024/10',
         role: '網頁前端工程師',
         title: '泰元國際開發',
-        description: '負責使用 Angular 開發 AI 生成圖片與 3D 編輯器 SaaS 平台的前端介面，專注於實現UI/UX設計師交付的網站外觀與互動功能，以確保使用者能獲得流暢的操作體驗。'
+        description: '<ul><li>- 負責使用 Angular 開發 AI 生成圖片與 3D 編輯器 SaaS 平台的前端介面</li><li>- 專注於實現 UI/UX 設計師交付的網站外觀與互動功能，確保使用者獲得流暢的操作體驗</li></ul>'
       },
       {
-        time: '2018-2022',
-        role: 'Executive 1',
-        title: '長面前樓聞海',
-        description: '下時節減比這象大起景行相機乎是面雜獎是跑的不，行傳科行機百許，男花走這至活相許個。失的動香要相不社林代水不別可生大性直感他地一自例我來快果？'
+        time: '2023/03 - 2023/06',
+        role: '學員',
+        title: '產業新尖兵-網頁前端工程師實戰班',
+        description: '<ul><li>- 勞動部舉辦之職訓課程</li><li>- 學習網站開發、資料庫設計、金流串接、網頁視覺設計、UI/UX 工具操作等實作課程</li></ul>'
       },
       {
-        time: '2035-2035',
-        role: 'Executive 2',
-        title: '存畫只點良',
-        description: '必別了刻友軍，家些的道裡起水會半子前型新不校早產，品英人到想人和！父二展功少我人所客生氣大千力斷。出民經怎得，出者圖出了麼氣來候使，包見今運度果專洲事開可，形長了就專幾我同學解張媽女資老色大心知旅解，票檢日難信、友乎頭最說變、民家地相銷見物於。'
+        time: '2021/02 - 2021/06',
+        role: '參與學生',
+        title: '數位沙盒校園實證人才培育-API創新應用設計',
+        description: '實作 Python Flask 網頁串接綠界科技金流API，建立售票平台'
       },
       {
-        time: '3035-2035',
-        role: 'Executive 3',
-        title: '都從其非自文正不',
-        description: '不過要性我本，間童廣燈青成觀星親金……會動時的民上、海人大現'
-      },
-      {
-        time: '1035-2035',
-        role: 'Executive 4',
-        title: '們場麼要不公子',
-        description: '氣要港構這度說，著的好功念他生氣，政完交，去提一重人、方四格上？金大小光數會定叫……們人次壓成分力南天飛新？'
-      },
-      {
-        time: '2035-2035',
-        role: 'Executive 5',
-        title: '你好以岸灣我熱',
-        description: '告下識現法年同社畫輕在你是打快太子一多朋；利去外、事底多離草詩來女而的面才心：樣你主重頭思這國用……名到員成；水現空期大學爸子以有了道的，心看兩國預樓但童友傳大音，是政正一光。'
+        time: '2018/09 - 2022/06',
+        role: '大學部學生',
+        title: '中正大學-資訊管理學系',
+        description: '修習資訊相關領域課程，包含 java, python...等程式語言'
       },
     ];
 }

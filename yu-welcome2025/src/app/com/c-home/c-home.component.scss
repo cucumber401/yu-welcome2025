@@ -83,6 +83,11 @@
         .d-flex {
             gap: 16px;
         }
+
+        .my-description {
+            margin: 0;
+            font-size: typography.$font-size-lg;
+        }
     }
 }
 
@@ -93,6 +98,7 @@
     .profile-bg {
         background: var(--beige-primary);
         position: relative;
+
         // 色塊上下對調
         .colored {
             background: white;

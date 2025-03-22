@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-experience">
     <div class="block-title">
         <h3>EXPERIENCE</h3>
     </div>
@@ -10,11 +10,9 @@
             </div>
             <div class="timeline-right">
                 <div class="timeline-title fade-in-right">{{item.title}}</div>
-                <div class="timeline-subtitle fade-in-right">
-                    {{item.description}}
-                </div>
+                <div class="timeline-subtitle fade-in-right" [innerHTML]="item.description"></div>
             </div>
         </div>
-        
+
     </div>
 </div>

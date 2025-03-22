@@ -2,7 +2,7 @@
 @use '../../../styles/typography';
 
 
-.container-fluid {
+.container-experience {
     text-align: center;
 }
 
@@ -83,6 +83,16 @@
                     // X軸抵銷
                     transform: translateX(-100px);
                     animation: fadeInX 0.7s ease-out forwards;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                    list-style-position: inside;
+
+                    li {
+
+                    }
                 }
 
 
