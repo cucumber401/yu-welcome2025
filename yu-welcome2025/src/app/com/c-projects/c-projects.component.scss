@@ -78,45 +78,16 @@
 
 @media only screen and (max-width: 575px) {
     .projects {
-        // display: flex;
-        // flex-direction: column;
         gap: 64px;
-        // margin: 40px 24px;
-        // max-width: 1200px;;
     }
 
     .project-item {
-        // display: flex;
         flex-direction: column;
-        // gap: 24px;
-
-        .project-media {
-            // flex: 3;
-            // box-shadow: var(--main-box-shadow);
-
-            video {
-                // aspect-ratio: 1920 / 1336;
-                // width: 100%;
-                // height: auto;
-                // object-fit: cover;
-            }
-        }
 
         .project-description {
-            // flex: 2;
 
             .title {
-                // @include typography.h3;
-                // font-weight: typography.$font-weight-bold;
                 background: transparent;
-                // color: var(--text-primary);
-                // border-radius: 4px;
-                // line-height: 200%;
-                // margin-bottom: 16px;
-            }
-
-            .detail {
-                // text-align: left;
             }
         }
     }
