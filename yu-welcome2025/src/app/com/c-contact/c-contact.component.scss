@@ -22,7 +22,7 @@
 
 .contact-form {
     flex: 1;
-    padding: 3rem;
+    padding: 3rem 3rem 5rem;
 
     form {
         margin-left: auto;
@@ -89,8 +89,8 @@
     }
 
     hr {
-        margin: 5em auto 1em 0;
-        background: var(--beige-secondary);
+        margin: 11em auto 1em 0;
+        border-color: var(--beige-secondary);
         max-width: 400px;
     }
 
@@ -117,5 +117,9 @@
 
     .contact-info {
         width: 100%;
+
+        hr {
+            margin: 4em auto 1em 0;
+        }
     }
 }

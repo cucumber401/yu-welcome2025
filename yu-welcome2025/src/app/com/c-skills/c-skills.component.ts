@@ -17,4 +17,8 @@ export class CSkillsComponent {
     { skillTitle: 'Java', skillLevel: '80%' },
     { skillTitle: 'RESTful API', skillLevel: '50%' },
   ];
+  languages: { skillTitle: string, skillLevel: string }[] = [
+    { skillTitle: 'Chinese', skillLevel: '99%' },
+    { skillTitle: 'English', skillLevel: '83%' },
+  ];
 }

@@ -3,13 +3,21 @@
         <h3>SKILLS</h3>
     </div>
     <div class="bar-chart-graph">
+        <!-- skills -->
         <div *ngFor="let item of skills" class="bar-chart-item">
             <h4 class="bar-chart-title">{{item.skillTitle}}</h4>
             <div class="bar-chart-container">
                 <div class="bar-chart" [appBarChartAnimate]="item.skillLevel"></div>
             </div>
         </div>
-
+        <hr>
+        <!-- Language -->
+        <div *ngFor="let item of languages" class="bar-chart-item">
+            <h4 class="bar-chart-title">{{item.skillTitle}}</h4>
+            <div class="bar-chart-container">
+                <div class="bar-chart" [appBarChartAnimate]="item.skillLevel"></div>
+            </div>
+        </div>
     </div>
 
 </div>
