@@ -1,0 +1,15 @@
+.btn-go-top {
+    position: fixed;
+    color: white;
+    background: var(--grey);
+    border: 2px solid var(--grey);
+    box-shadow: var(--main-box-shadow);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    right: 2rem;
+    bottom: 4rem;
+
+    img {
+        width: 10px;
+    }
+}

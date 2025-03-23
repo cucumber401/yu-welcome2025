@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./single-page-resume.component.scss']
 })
 export class SinglePageResumeComponent {
-
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
