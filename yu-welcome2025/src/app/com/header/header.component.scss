@@ -68,7 +68,8 @@
     .header {
         flex-wrap: wrap;
         position: relative;
-        z-index: 1;
+        z-index: 3;
+        box-shadow: var(--main-box-shadow);
 
         &::after {
             content: '';
@@ -82,11 +83,11 @@
     }
 
     .logo {
-        z-index: 1;
+        z-index: 3;
     }
 
     .btn-hamburger {
-        z-index: 1;
+        z-index: 3;
         display: flex;
         flex-direction: column;
         gap: 3.2px;
@@ -106,9 +107,11 @@
             .btn-hamburger-line:nth-child(1) {
                 rotate: 45deg;
             }
+
             .btn-hamburger-line:nth-child(2) {
                 display: none;
             }
+
             .btn-hamburger-line:nth-child(3) {
                 rotate: -45deg;
                 position: absolute;
@@ -120,17 +123,19 @@
     .navbar {
         background: var(--secondary);
         position: absolute;
-        z-index: -1;
+        z-index: 0;
         overflow: hidden;
 
         top: 100%;
         left: 0;
         width: 100%;
         transition: top 0.3s ease;
+        box-shadow: var(--main-box-shadow);
 
 
         .nav-items {
             flex-direction: column;
+
 
             .nav-item {
                 width: 100%;
@@ -146,10 +151,24 @@
             }
         }
 
-        &:not(.collapsed) {}
+        &:not(.collapsed) {
+            // z-index: 0;
+
+            // &::before {
+            //     content: '';
+            //     background: var(--grey);
+            //     background: pink;
+            //     position: fixed;
+            //     z-index: -2;
+            //     left: 0;
+            //     right: 0;
+            //     top: 0;
+            //     bottom: 0;
+            // }
+        }
 
         &.collapsed {
-            top: -100%;
+            top: -150%;
         }
     }
 }

@@ -126,24 +126,14 @@
         }
 
         .intro {
-            // flex: 1;
-            // height: fit-content;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
             gap: 20px;
     
             h1 {
                 font-size: 4rem;
             }
     
-            .d-flex {
-                // gap: 16px;
-            }
     
             .my-description {
-                // margin: 0;
-                // font-size: typography.$font-size-lg;
                 padding: 0;
             }
         }
@@ -156,7 +146,6 @@
 
         .profile-card {
             height: fit-content;
-            // height: 300px;
 
             .photo {
                 width: 100%;
@@ -164,24 +153,8 @@
         }
 
         .intro {
-            // flex: 1;
-            // height: fit-content;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // gap: 40px;
-    
-            h1 {
-                // font-size: 6rem;
-            }
-    
-            .d-flex {
-                // gap: 16px;
-            }
     
             .my-description {
-                // margin: 0;
-                // font-size: typography.$font-size-lg;
                 padding: 1em;
             }
         }
